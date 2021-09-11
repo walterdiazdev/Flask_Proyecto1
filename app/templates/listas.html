@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Listas{% endblock %}
+
+{% block body %}
+    <h1>Listas</h1>
+
+    <ul>
+    {% for item in data %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

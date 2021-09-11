@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+
+    <p>
+    Pasajes de datos
+    <a href="/listas.html"       title="Ejemplo de pasaje de listas">Listas</a> 
+    <a href="/diccionarios.html" title="Ejemplo de pasaje de diccionarios">Diccionarios</a> 
+    </p>
+
+    <p>
+    Rutas Variables 
+    <a href="/contacto/Daniel"  title="Rutas variables">contacto/Daniel</a> 
+    <a href="/contacto/Claudia" title="Rutas variables">contacto/Claudia</a> 
+    </p>
+
     {% block body %}{% endblock %}
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
